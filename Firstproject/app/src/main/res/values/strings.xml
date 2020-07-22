@@ -1,0 +1,13 @@
+<string-array name="MainActivity">
+    <item>SendData</item>
+    <item>ReceiveData</item>
+    <item>Settings</item>
+
+</string-array>
+
+<array name="icons">
+<item name="send">@drawable/send.png</item>
+<item name="receive">@drawable/receive.png</item>
+<item name="settings">@drawable/settings.png</item>
+
+</array>

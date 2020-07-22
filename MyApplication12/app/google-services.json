@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1087693840207",
+    "firebase_url": "https://mezunapp.firebaseio.com",
+    "project_id": "mezunapp",
+    "storage_bucket": "mezunapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087693840207:android:90d13bed540b0bb0896f3a",
+        "android_client_info": {
+          "package_name": "com.prevezene.myapplication12"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087693840207-t90o68efuhp00sijseg0vbe8objht7b7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXl2Ct_dlUTJTSXcsaD5a0U1S2q-MNOVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087693840207-t90o68efuhp00sijseg0vbe8objht7b7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
