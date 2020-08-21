@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D4CEE1"
+    tools:context=".ui.slideshow.SlideshowFragment">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints,ScrollViewCount">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="161dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="225dp"
+                android:fontFamily="sans-serif"
+                android:text="REKTÖRLÜK"
+                android:textColor="#1D37D6"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/rektorluk" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="225dp"
+                android:fontFamily="sans-serif"
+                android:text="FATİH YERLEŞKESİ"
+                android:textColor="#1D37D6"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.026"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/fatih" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="221dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="225dp"
+                android:fontFamily="sans-serif"
+                android:text="HALİÇ YERLEŞKESİ"
+                android:textColor="#1D37D6"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.019"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/halic2" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="196dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="225dp"
+                android:fontFamily="sans-serif"
+                android:text="TOPKAPI YERLEŞKESİ"
+                android:textColor="#1D37D6"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/topkapi" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="158dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="225dp"
+                android:fontFamily="sans-serif"
+                android:text="ÇAMLICA YERLEŞKESİ"
+                android:textColor="#1D37D6"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/camlica" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="174dp"
+                android:layout_height="62dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="225dp"
+                android:fontFamily="sans-serif"
+                android:text="KANDİLLİ YERLEŞKESİ"
+                android:textColor="#1D37D6"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/kandilli" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="187dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="225dp"
+                android:fontFamily="sans-serif"
+                android:text="ÜSKÜDAR YERLEŞKESİ"
+                android:textColor="#1D37D6"
+                android:textSize="23dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.037"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/uskudar" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="20dp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

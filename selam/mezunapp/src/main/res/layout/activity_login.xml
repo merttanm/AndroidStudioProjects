@@ -5,6 +5,7 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/halic"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -12,7 +13,7 @@
     tools:context=".ui.login.LoginActivity">
 
     <Button
-        android:id="@+id/login"
+        android:id="@+id/buttongiris"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
@@ -20,8 +21,8 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="64dp"
-        android:enabled="false"
         android:text="GİRİŞ"
+        android:textColor="#101010"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.537"
@@ -31,33 +32,37 @@
 
     <EditText
         android:id="@+id/username"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="296dp"
+        android:layout_height="47dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="244dp"
+        android:layout_marginTop="264dp"
         android:layout_marginEnd="24dp"
+        android:background="#ECE4E4"
+        android:backgroundTint="#ECE4E4"
         android:hint="@string/prompt_email"
         android:inputType="textEmailAddress"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.477"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="294dp"
+        android:layout_height="45dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="24dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#ECE4E4"
         android:hint="@string/prompt_password"
         android:imeActionLabel="@string/action_sign_in_short"
         android:imeOptions="actionDone"
         android:inputType="textPassword"
         android:selectAllOnFocus="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username" />
 
@@ -85,25 +90,15 @@
         android:layout_marginTop="248dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="81dp"
+        android:background="#ECE2E2"
+        android:backgroundTint="#EAE3E3"
         android:text="KAYIT OL"
         android:textAlignment="center"
-        android:textColor="#931F1F"
+        android:textColor="#0A0B0B"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="9dp"
-        android:layout_marginBottom="27dp"
-        app:layout_constraintBottom_toTopOf="@+id/username"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.553"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/indir" />
 </androidx.constraintlayout.widget.ConstraintLayout>
