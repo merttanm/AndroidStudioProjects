@@ -121,12 +121,17 @@ boolean result=true;
 
 
 
-    }
+    }*/
+
     public Cursor getAllData() {
         SQLiteDatabase sqLiteDatabase= this.getWritableDatabase();
         Cursor res = sqLiteDatabase.rawQuery("select * from "+TABLE_NAME,null);
         return res;
-    }/*
+    }
+
+
+
+    /*
     public boolean updateData(String edt_mail, String edt_sifre,String edt_kullanici, String edt_kullaniciadi ) {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();

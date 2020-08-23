@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.gallery.GalleryFragment"
-    android:background="#E4CCCB">
+    android:background="#AED4F4">
 
     <ScrollView
         android:id="@+id/scroll"
@@ -46,11 +46,11 @@
                 android:id="@+id/scroll_2"
                 android:layout_width="match_parent"
                 android:layout_height="170dp"
-                android:background="#CD9DAF">
+                android:background="#AA8CE8">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="4dp"
+                    android:layout_height="250dp"
                     android:orientation="horizontal">
 
                     <ImageView
@@ -70,14 +70,14 @@
                     <ImageView
                         android:id="@+id/ressim3"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="173dp">
 
                     </ImageView>
 
                     <ImageView
                         android:id="@+id/ressim4"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="173dp">
 
                     </ImageView>
                 </LinearLayout>

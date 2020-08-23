@@ -1,7 +1,9 @@
 package com.prevezene.mezunapp;
 
+import android.content.ClipData;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.ContextMenu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
@@ -11,6 +13,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.constraintlayout.widget.Constraints;
@@ -30,6 +33,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private AppBarConfiguration mAppBarConfiguration;
     private MenuItem item;
+
+
+    @Override
+    protected void onPostCreate(@Nullable Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+    }
+
     ConstraintLayout arka;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,15 +95,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             super.onBackPressed();
         }
     }
-    /* public  boolean onOptionsItemSelected(MenuItem item){
+     public  boolean onOptionsItemSelected(MenuItem item){
+  int id=item.getItemId();
+  if(id ==R.id.action_profil){
+      Intent profilezıpla= new Intent(MainActivity.this,profil.class);
+      startActivity(profilezıpla);
 
-         int id=item.getItemId();
-         if ( id == R.id.action_settings){
-             return true;
-         }
-         return  super.onOptionsItemSelected(item);
+  }
+ /* else if(id ==R.id.action_profil){
 
-     }*/
+
+  }*/
+         return super.onOptionsItemSelected(item);
+
+     }
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
