@@ -11,11 +11,14 @@ import android.widget.EditText;
 
 import com.prevezene.mezunapp.ui.login.DatabaseHelper;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class profil extends AppCompatActivity {
     Button buton_geri;
     //u userDbhelper;
-    DatabaseHelper db;
-    EditText k_adi, adi, okulno, şifre;
+    DatabaseHelper sqLiteDatabase;
+    EditText k_adi, adi, okulno, sifre;
     public void anasayfayadon(){
         buton_geri=(Button)findViewById(R.id.button_geri);
         buton_geri.setOnClickListener(new View.OnClickListener() {
@@ -33,19 +36,20 @@ public class profil extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profil);
         anasayfayadon();
+        sqLiteDatabase =new DatabaseHelper(this);
+        viewAll();
 
-        k_adi= (EditText)findViewById(R.id.txt_kullaniciadigoster);
-        adi= (EditText)findViewById(R.id.txt_adigoster);
-        okulno= (EditText)findViewById(R.id.txt_okulnogoster);
-        şifre= (EditText)findViewById(R.id.txt_şifregoster);
 
+
+        //List<user> posts = db.getAllBeneficiary();
+/*
         db =new DatabaseHelper(this);
         Cursor res = db.getAllData();
         if(res.getCount()==0){
 
             return;
 
-        }
+        }*/
       /* StringBuffer buffer = new StringBuffer();
         while (res.moveToNext()){
             buffer.append("ID :"+ res.getString(0));
@@ -55,22 +59,30 @@ public class profil extends AppCompatActivity {
         }*/
 
     }
-    /*
+
+    private void viewAll() {
+        k_adi= (EditText)findViewById(R.id.txt_kullaniciadigoster);
+        adi= (EditText)findViewById(R.id.txt_adigoster);
+        okulno= (EditText)findViewById(R.id.txt_okulnogoster);
+        sifre= (EditText)findViewById(R.id.txt_şifregoster);
+        Cursor res = sqLiteDatabase.getAllData();
+        if (res.moveToFirst()) {
+            int kadi = res.getInt(0);
+            String aadi = res.getString(1);
+            String  no = res.getString(2);
+            String  sifresi = res.getString(3);
+
+             k_adi.setId(kadi);
+             adi.setText(aadi);
+            okulno.setText(no);
+            sifre.setText(sifresi);
+
+        }
+    }
+
+/*
     public void viewAll(View view) {
 
-        sqLiteDatabase= new DatabaseHelper(this);
-        Cursor res = sqLiteDatabase.getAllData();
-            if (res.moveToFirst()) {
-                String kadi = res.getString(0);
-                String aadi = res.getString(1);
-                String  no = res.getString(2);
-                String  şifresi = res.getString(3);
-                k_adi.setText(kadi);
-                adi.setText(aadi);
-                okulno.setText(no);
-                şifre.setText(şifresi);
-
-            }
 
     }*/
 }

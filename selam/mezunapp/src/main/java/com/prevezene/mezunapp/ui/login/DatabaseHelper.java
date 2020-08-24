@@ -11,16 +11,23 @@ import static android.content.ContentValues.*;
 
 import androidx.annotation.Nullable;
 
+import com.prevezene.mezunapp.user;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class DatabaseHelper extends SQLiteOpenHelper {
-    public static final String DATABASE_NAME="login.sqLiteDatabase";
-    public static final String TABLE_NAME="user";
-    public static final String COL_1="ID";
-    public static final String COL_2="NAME";
-    public static final String COL_3="EMAIL";
-    public static final String COL_4="PASSWORD";
+    public static final String DATABASE_NAME = "login.sqLiteDatabase";
+    public static final String TABLE_NAME = "user";
+    public static final String COL_1 = "ID";
+    public static final String COL_2 = "NAME";
+    public static final String COL_3 = "EMAIL";
+    public static final String COL_4 = "PASSWORD";
+
     public DatabaseHelper(Context context) {
-        super(context, DATABASE_NAME, null,  1);
+        super(context, DATABASE_NAME, null, 1);
     }
+
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
 
@@ -31,7 +38,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
 
-        sqLiteDatabase.execSQL(" drop table if exists "+TABLE_NAME );
+        sqLiteDatabase.execSQL(" drop table if exists " + TABLE_NAME);
         onCreate(sqLiteDatabase);
     }
  /*   public boolean create(Account account){
@@ -55,26 +62,26 @@ boolean result=true;
 
 
     ////// insert table
-    public boolean insert(String edt_mail, String edt_sifre,String edt_kullanici, String edt_kullaniciadi ){
+    public boolean insert(String edt_mail, String edt_sifre, String edt_kullanici, String edt_kullaniciadi) {
 
 
-        SQLiteDatabase sqLiteDatabase=this.getWritableDatabase();
-        ContentValues contentValues= new ContentValues();
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
         /*contentValues.put("EMAIL", edt_mail );
         contentValues.put("PASSWORD", edt_sifre );
         */
-        contentValues.put(COL_1,edt_kullanici);
-        contentValues.put(COL_2,edt_kullaniciadi);
-        contentValues.put(COL_3,edt_mail);
-        contentValues.put(COL_4,edt_sifre);
+        contentValues.put(COL_1, edt_kullanici);
+        contentValues.put(COL_2, edt_kullaniciadi);
+        contentValues.put(COL_3, edt_mail);
+        contentValues.put(COL_4, edt_sifre);
 
-            long result= sqLiteDatabase.insert(TABLE_NAME,null, contentValues);
-            if (result== -1)
-                return
-                        false;
-            else
-                return
-                        true;
+        long result = sqLiteDatabase.insert(TABLE_NAME, null, contentValues);
+        if (result == -1)
+            return
+                    false;
+        else
+            return
+                    true;
         /*public String getLoginData(String edt_mail, String edt_sifre)
         {
             SQLiteDatabase sql=this.getReadableDatabase();
@@ -87,12 +94,13 @@ boolean result=true;
         }*/
 
     }
-    public Boolean emailpassword(String edt_mail, String edt_sifre){
-        SQLiteDatabase db= this.getReadableDatabase();
-        Cursor cursor =db.rawQuery("select * from user where EMAIL=? and PASSWORD=?", new String[]{edt_mail, edt_sifre});
 
-            if(cursor.getCount()>0) return true;
-            else return false;
+    public Boolean emailpassword(String edt_mail, String edt_sifre) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("select * from user where EMAIL=? and PASSWORD=?", new String[]{edt_mail, edt_sifre});
+
+        if (cursor.getCount() > 0) return true;
+        else return false;
 
     }
 
@@ -124,13 +132,36 @@ boolean result=true;
     }*/
 
     public Cursor getAllData() {
-        SQLiteDatabase sqLiteDatabase= this.getWritableDatabase();
-        Cursor res = sqLiteDatabase.rawQuery("select * from "+TABLE_NAME,null);
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        Cursor res = sqLiteDatabase.rawQuery("select * from " + TABLE_NAME, null);
         return res;
     }
+}/*
+    public List<user> getAllBeneficiary() {
+        List<user> beneficiaryList = new ArrayList<user>();
+        SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery("select * from "+TABLE_NAME,null);
 
+        if (cursor.moveToFirst()) {
+            do {
+                user beneficiary = new user();
+                beneficiary.setId(Integer.parseInt(cursor.getString(cursor.getColumnIndex(COL_1))));
+                beneficiary.setName(cursor.getString(cursor.getColumnIndex(COL_2)));
+                beneficiary.setNumber(cursor.getString(cursor.getColumnIndex(COL_3)));
+                beneficiary.setPassword(cursor.getString(cursor.getColumnIndex(COL_4)));
+                // Adding user record to list
+                beneficiaryList.add(beneficiary);
+            } while (cursor.moveToNext());
+        }
+        cursor.close();
+        sqLiteDatabase.close();
 
+        // return user list
+        return beneficiaryList;
+    }
+    }
 
+*/
     /*
     public boolean updateData(String edt_mail, String edt_sifre,String edt_kullanici, String edt_kullaniciadi ) {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
@@ -188,4 +219,3 @@ super(context, TABLE_NAME, null,1);
 
     }
 */
-}
