@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
-    android:background="#BFA5F3"
+    android:background="#51A6CF"
     android:gravity="bottom"
     android:orientation="vertical"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -23,17 +23,20 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/croissant_one"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         android:text="FSMBLM Mezunlar Ağı "
+        android:textAllCaps="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="#EFEBEB"
-        android:textSize="18sp"
-        android:textStyle="italic" />
+        android:textColor="#101010"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/croissant_one"
         android:text="HOŞGELİNİZ"
-        android:textAllCaps="true" />
+        android:textAllCaps="true"
+        android:textColor="#191818" />
 </LinearLayout>

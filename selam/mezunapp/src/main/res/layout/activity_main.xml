@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:foregroundTint="#FFFFFF"
+    android:foregroundTint="#F6EEEE"
     android:scrollbarSize="6dp"
     tools:openDrawer="start">
 
@@ -14,7 +14,7 @@
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:foregroundTint="#D31919" />
+        android:foregroundTint="#F8E8E8" />
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
@@ -22,10 +22,10 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:background="@color/colorPrimaryDark"
-        android:backgroundTint="#DDCBE4"
+        android:backgroundTint="#E7EDEF"
         android:fitsSystemWindows="true"
         app:elevation="20dp"
         app:headerLayout="@layout/nav_header_main"
-        app:itemTextColor="@color/design_default_color_primary"
+        app:itemTextColor="@color/design_default_color_on_secondary"
         app:menu="@menu/activity_main_drawer" />
 </androidx.drawerlayout.widget.DrawerLayout>
