@@ -103,7 +103,21 @@ boolean result=true;
         else return false;
 
     }
+public boolean updateData (String edt_mail, String edt_sifre, String edt_kullanici, String edt_kullaniciadi){
+    SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+    ContentValues contentValues = new ContentValues();
+        /*contentValues.put("EMAIL", edt_mail );
+        contentValues.put("PASSWORD", edt_sifre );
+        */
+    contentValues.put(COL_1, edt_kullanici);
+    contentValues.put(COL_2, edt_kullaniciadi);
+    contentValues.put(COL_3, edt_mail);
+    contentValues.put(COL_4, edt_sifre);
+    sqLiteDatabase.update(TABLE_NAME,contentValues,"ID = ?", new String[]{edt_kullanici});
+    // buradan devam edeceğim  !!!!!!!
+    return true;
 
+}
 
 
     /*

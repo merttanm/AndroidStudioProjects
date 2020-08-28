@@ -25,14 +25,14 @@
 
     <fragment
         android:id="@+id/hizmetler"
-        android:name="com.prevezene.mezunapp.ui.slideshow.SlideshowFragment"
+        android:name="com.prevezene.mezunapp.fsmvu_paper"
         android:label="HİZMETLER"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/activity_asd" />
     <fragment
         android:id="@+id/haberler"
-        android:name="com.prevezene.mezunapp.ui.slideshow.SlideshowFragment"
+        android:name="com.prevezene.mezunapp.fsmvu_paper"
         android:label="HABERLER"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_fsmvu_paper" />
     <fragment
         android:id="@+id/iletisim"
         android:name="com.prevezene.mezunapp.ui.slideshow.SlideshowFragment"

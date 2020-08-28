@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.gallery.GalleryFragment"
-    android:background="#AED4F4">
+    android:background="#F6F7F8">
 
     <ScrollView
         android:id="@+id/scroll"
@@ -26,15 +26,15 @@
 
             <TextView
                 android:id="@+id/textView11"
-                android:layout_width="wrap_content"
+                android:layout_width="265dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="25dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="225dp"
                 android:fontFamily="sans-serif"
                 android:text="HALİÇ YERLEŞKESİ"
                 android:textColor="#1D37D6"
-                android:textSize="23dp"
+                android:textSize="25dp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -46,40 +46,74 @@
                 android:id="@+id/scroll_2"
                 android:layout_width="match_parent"
                 android:layout_height="170dp"
-                android:background="#AA8CE8">
+                android:background="#D9DCDD">
 
                 <LinearLayout
                     android:layout_width="4dp"
                     android:layout_height="250dp"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:id="@+id/ressim1"
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        app:cardBackgroundColor="#DEE0E1">
 
-                    </ImageView>
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
 
-                    <ImageView
-                        android:id="@+id/ressim2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="173dp">
+                            <ImageView
+                                android:id="@+id/ressim1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:layout_editor_absoluteX="0dp">
 
-                    </ImageView>
+                            </ImageView>
 
-                    <ImageView
-                        android:id="@+id/ressim3"
-                        android:layout_width="match_parent"
-                        android:layout_height="173dp">
+                            <ImageView
+                                android:id="@+id/ressim2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="1dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toEndOf="@+id/ressim1"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintVertical_bias="0.0">
 
-                    </ImageView>
+                            </ImageView>
 
-                    <ImageView
-                        android:id="@+id/ressim4"
-                        android:layout_width="match_parent"
-                        android:layout_height="173dp">
+                            <ImageView
+                                android:id="@+id/ressim3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="1dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/ressim2"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:layout_editor_absoluteX="428dp">
 
-                    </ImageView>
+                            </ImageView>
+
+                            <ImageView
+                                android:id="@+id/ressim4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/ressim3"
+                                app:layout_constraintVertical_bias="1.0"
+                                tools:layout_editor_absoluteX="465dp">
+
+
+                            </ImageView>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    </androidx.cardview.widget.CardView>
                 </LinearLayout>
             </HorizontalScrollView>
 
@@ -88,8 +122,10 @@
                 android:layout_height="500dp"
                 android:backgroundTint="#8C0B0B"
                 android:text="     Beyoğlu ilçesinde, Halıcıoğlu semtinde bulunan yerleşke, döneminin mimarisi içinde karakteristik olarak beliren büyük kışla binalarının modern anlamdaki ilk örneği olan ve III.Selim tarafından 1794-1795 yıllarında yaptırılan Humbaracı Kışlası'nın kurulduğu alanda yer alır. Ortası avlulu dikdörtgen plan şemasındaki klasik kışla planını tekrar eden yapının avlusunda Sultan III.Selim'in 1803-1804 yıllarında annesi Mihrişah Valide Sultan adına yaptırmış olduğu, günümüzde cadde üzerinde görülen Humbaracılar Kışlası / Kumbarhane Camii bulunmaktadır. Kışla binası 20. yüzyıl başlarında belirlenemeyen bir tarihte yıkılmıştır."
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#246687"
                 android:textColorLink="#D37979"
-                android:textSize="20dp"></EditText>
+                android:textSize="23dp"></EditText>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
