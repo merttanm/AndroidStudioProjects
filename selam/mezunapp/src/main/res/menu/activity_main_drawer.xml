@@ -24,7 +24,7 @@
         <item
             android:id="@+id/haberler"
             android:icon="@drawable/ic_baseline_chat_24"
-            android:title="HABERLER" />
+            android:title="MEZUNLARIMIZ" />
         <item
             android:id="@+id/iletisim"
             android:icon="@drawable/ic_twotone_call_24"

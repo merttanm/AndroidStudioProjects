@@ -5,14 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fsmvu_paper"
+    android:background="#65C5F4"
     >
 
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="4dp"
-        android:background="#FFFFFF"
+        android:layout_marginTop="18dp"
+        android:background="#65C5F4"
         android:fadingEdge="vertical|none"
         android:fillViewport="false"
 
@@ -28,174 +29,242 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="0dp"
-               >
+                app:cardBackgroundColor="#F3F6F8">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:background="@drawable/okul2">
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF">
 
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="145dp"
+                        android:layout_height="128dp"
+                        android:layout_marginStart="4dp"
+                        android:src="@drawable/mezun1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
 
                     <TextView
-                        android:id="@+id/textView21"
-                        android:layout_width="match_parent"
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="#979595"
-                        android:fontFamily="@font/acme"
-                        android:text="Covıd-19 Döneminde Erasmus Nasıl mı Olur?"
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="18dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="180dp"
+                        android:layout_marginBottom="100dp"
+                        android:text="ALİ YAŞAR"
+                        android:textColor="#090808"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/imageView3"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
+
             </androidx.cardview.widget.CardView>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="        " />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="0dp">
+                app:cardBackgroundColor="#F3F6F8">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="421dp"
-                    android:layout_height="200dp"
-                    android:background="@drawable/okul1">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF">
 
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="145dp"
+                        android:layout_height="128dp"
+                        android:layout_marginStart="4dp"
+                        android:src="@drawable/mezun2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="#979595"
-                        android:fontFamily="@font/acme"
-                        android:text="Dr. Öğr. Üyesi Ateş’ten iki yeni kitap"
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="18dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="180dp"
+                        android:layout_marginBottom="100dp"
+                        android:text="OĞUZ OKTAY BÜYÜK"
+                        android:textColor="#090808"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
+                        app:layout_constraintHorizontal_bias="0.046"
+                        app:layout_constraintStart_toEndOf="@+id/imageView6"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
+
             </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="        " />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="0dp">
+                app:cardBackgroundColor="#F3F6F8">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:background="@drawable/haber3">
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF">
 
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="145dp"
+                        android:layout_height="128dp"
+                        android:layout_marginStart="4dp"
+                        android:src="@drawable/mezun3"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="#979595"
-                        android:fontFamily="@font/acme"
-                        android:text="Hayalimdeki Bölüm Seminerleri"
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="18dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="180dp"
+                        android:layout_marginBottom="100dp"
+                        android:text="SÜLEYMAN GÜNGÖRMEZ"
+                        android:textColor="#090808"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
+                        app:layout_constraintHorizontal_bias="0.157"
+                        app:layout_constraintStart_toEndOf="@+id/imageView7"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.cardview.widget.CardView>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="        " />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="0dp">
+                app:cardBackgroundColor="#F3F6F8">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:background="@drawable/haber4">
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF">
 
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="145dp"
+                        android:layout_height="128dp"
+                        android:layout_marginStart="4dp"
+                        android:src="@drawable/mezun1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="#979595"
-                        android:fontFamily="@font/acme"
-                        android:text="Ambalaj Tasarımı Programı bu yıl ilk öğrencilerini alıyor"
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="18dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="180dp"
+                        android:layout_marginBottom="100dp"
+                        android:text="ALİ YAŞAR"
+                        android:textColor="#090808"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/imageView4"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.cardview.widget.CardView>
 
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="        " />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="0dp">
+                app:cardBackgroundColor="#FFFFFF">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:background="@drawable/haber5">
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF">
 
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="145dp"
+                        android:layout_height="128dp"
+                        android:layout_marginStart="4dp"
+                        android:src="@drawable/mezun1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="#979595"
-                        android:fontFamily="@font/acme"
-                        android:text="1483 yıllık Ayasofya’da yeni keşifler"
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="18dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="180dp"
+                        android:layout_marginBottom="100dp"
+                        android:text="ALİ YAŞAR"
+                        android:textColor="#090808"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toEndOf="@+id/imageView5"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
             </androidx.cardview.widget.CardView>
 
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="0dp">
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:background="@drawable/haber6">
-
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="#979595"
-                        android:fontFamily="@font/acme"
-                        android:text="GSF Mezuniyet Sergisi bu yıl dijitalde"
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="18dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </androidx.cardview.widget.CardView>
 
 
         </LinearLayout>

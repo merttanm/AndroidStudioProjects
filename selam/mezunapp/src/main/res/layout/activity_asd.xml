@@ -6,5 +6,87 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".asd">
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      app:layout_constraintGuide_begin="20dp" />
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  <View
+      android:id="@+id/view"
+      android:layout_width="wrap_content"
+      android:layout_height="150dp"
+      android:layout_marginTop="4dp"
+      android:background="@drawable/hikaye"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="MissingConstraints">
+
+  </View>
+
+  <ImageView
+      android:id="@+id/imageView5"
+      android:layout_width="43dp"
+      android:layout_height="24dp"
+      android:layout_marginStart="50dp"
+      android:layout_marginTop="92dp"
+      android:layout_marginEnd="120dp"
+      android:layout_marginBottom="630dp"
+      android:backgroundTint="#5321B6"
+      android:foregroundTint="#5025A8"
+      android:src="@drawable/name"
+      android:tint="#46228F"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.976"
+      app:layout_constraintStart_toEndOf="@+id/view"
+
+      app:layout_constraintVertical_bias="0.952"
+      tools:ignore="ContentDescription,MissingConstraints" />
+  <ScrollView
+      android:id="@+id/scrollView2"
+      android:layout_width="410dp"
+      android:layout_height="473dp"
+      android:layout_marginTop="4dp"
+      android:fadingEdge="vertical|none"
+      android:fillViewport="false"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/view"
+      tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+      <androidx.appcompat.widget.Toolbar
+          android:id="@+id/toolbar4"
+          android:layout_width="409dp"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="16dp"
+          android:minHeight="?attr/actionBarSize"
+          android:theme="?attr/actionBarTheme"
+          app:layout_constraintBottom_toBottomOf="parent"
+          tools:layout_editor_absoluteX="1dp" />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+  </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

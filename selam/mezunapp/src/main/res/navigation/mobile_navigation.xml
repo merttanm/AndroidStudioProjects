@@ -31,7 +31,7 @@
     <fragment
         android:id="@+id/haberler"
         android:name="com.prevezene.mezunapp.fsmvu_paper"
-        android:label="HABERLER"
+        android:label="MEZUNLARIMIZ"
         tools:layout="@layout/fragment_fsmvu_paper" />
     <fragment
         android:id="@+id/iletisim"

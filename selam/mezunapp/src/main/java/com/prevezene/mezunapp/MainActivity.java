@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavigationUI.setupWithNavController(navigationView, navController);
         FragmentManager fm= getSupportFragmentManager();
         fm.beginTransaction().replace(R.id.nav_host_fragment, new mezunPlatformu_Fragment()).commit();
+
     }
 
     @Override
