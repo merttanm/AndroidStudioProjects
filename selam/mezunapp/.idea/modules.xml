@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1916306770/app.iml" filepath="$PROJECT_DIR$/.idea/modules/1916306770/app.iml" group="selam/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mezunapp.iml" filepath="$PROJECT_DIR$/.idea/modules/mezunapp.iml" group="selam/mezunapp" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/978351637/myapplication.iml" filepath="$PROJECT_DIR$/.idea/modules/978351637/myapplication.iml" group="selam/myapplication" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1549890112/selam.iml" filepath="$PROJECT_DIR$/.idea/modules/-1549890112/selam.iml" group="selam" />
+    </modules>
+  </component>
+</project>

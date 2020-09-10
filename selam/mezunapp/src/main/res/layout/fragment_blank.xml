@@ -52,7 +52,8 @@
                 android:id="@+id/toolbar4"
                 android:layout_width="409dp"
                 android:layout_height="40dp"
-                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="8dp"
                 android:background="#EFECEC"
                 android:minHeight="?attr/actionBarSize"
                 android:theme="?attr/actionBarTheme"
@@ -64,23 +65,123 @@
                     android:layout_height="match_parent">
 
                     <TextView
-                    android:id="@+id/toolbar_title"
-                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
-                    android:layout_width="343dp"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:text="DUYURULAR"
-                    android:textAlignment="viewStart"
-                    android:textColor="#0C0C0C"
-                    android:textSize="27dp"
-                    tools:ignore="RtlCompat" />
+                        android:id="@+id/toolbar_title"
+                        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                        android:layout_width="343dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="DUYURULAR"
+                        android:textAlignment="viewStart"
+                        android:textColor="#0C0C0C"
+                        android:textSize="27dp"
+                        tools:ignore="RtlCompat" />
+
+
 
                 </FrameLayout>
             </androidx.appcompat.widget.Toolbar>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:cardBackgroundColor="#F5F7F8">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="339dp"
+                        android:layout_height="49dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="396dp"
+                        android:layout_marginBottom="36dp"
+                        android:scrollbarSize="12dp"
+                        android:text="Digital Planet adlı teknoloji şirketi personel aramaktadır."
+                        android:textColor="#0E0E0E"
+                        android:textColorHint="#090909"
+                        android:textSize="18dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:cardBackgroundColor="#F5F7F8">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="450dp"
+                    android:layout_height="55dp">
+
+                    <TextView
+                        android:layout_width="344dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="396dp"
+                        android:layout_marginBottom="36dp"
+                        android:scrollbarSize="12dp"
+                        android:text="Yüksek lisans ve doktora başvurusu için son gün"
+                        android:textColor="#090909"
+                        android:textSize="18dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:cardBackgroundColor="#F5F7F8">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="450dp"
+                    android:layout_height="55dp">
+
+                    <TextView
+                        android:layout_width="347dp"
+                        android:layout_height="39dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="396dp"
+                        android:layout_marginBottom="36dp"
+                        android:scrollbarSize="12dp"
+                        android:text="İBB staj imkanları"
+                        android:textColor="#0E0E0E"
+                        android:textSize="18dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar5"
                 android:layout_width="409dp"
                 android:layout_height="40dp"
+                android:layout_marginTop="6dp"
                 android:layout_marginBottom="16dp"
                 android:background="#EFECEC"
                 android:minHeight="?attr/actionBarSize"
@@ -116,6 +217,7 @@
                 android:id="@+id/toolbar6"
                 android:layout_width="409dp"
                 android:layout_height="40dp"
+                android:layout_marginTop="6dp"
                 android:layout_marginBottom="16dp"
                 android:background="#EFECEC"
                 android:minHeight="?attr/actionBarSize"
@@ -144,9 +246,9 @@
 
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="208dp"
+                android:layout_height="193dp"
                 android:layout_marginTop="0dp"
-                android:src="@drawable/bizitakipedin" />
+                android:src="@drawable/takiet" />
 
 
         </LinearLayout>
